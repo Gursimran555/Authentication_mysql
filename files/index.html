@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/files/styles.css">
+</head>
+<body>
+    <button id="toggle-btn" onclick="toggleForm()" class="toggle-btn">SignUp</button>
+    <div class="login-container">
+        <form id="login-form" action="/login" method="POST">
+            <h2>Login</h2>
+            <div class="input-group">
+                <label for="loginId">Login ID:</label>
+                <input type="text" id="loginId" name="loginId" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button class="login123" type="submit">Login</button>
+        </form>
+        <form id="signup-form" action="/signup" method="POST" style="display: none;">
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <label for="signupLoginId">Login ID:</label>
+                <input type="text" id="signupLoginId" name="signupLoginId" required>
+            </div>
+            <div class="input-group">
+                <label for="signupPassword">Password:</label>
+                <input type="password" id="signupPassword" name="signupPassword" required>
+            </div>
+            <button class="login123" type="submit">Sign Up</button>
+        </form>
+    </div>
+    <script src="/files/script.js"></script>
+</body>
+</html>

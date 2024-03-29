@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #edecec;
+}
+
+
+.login-container {
+  max-width: 500px;
+  
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #e3eae2;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+
+.toggle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background-color: #5c7b65;
+  color: #fff;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background-color: #5cb466;
+}
+
+
+form {
+  position: relative;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+input {
+  width: calc(100% - 20px);
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+}
+
+
+#login-form {
+  animation: slideInLeft 0.5s ease;
+}
+
+#signup-form {
+  animation: slideInRight 0.5s ease;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.login123  {
+  width: 80px;
+  height :40px;
+  background-color: #5f8764;
+  border-radius: 30px;
+  border: none;
+  color:white;
+  margin-left: 40%;
+}
+.login123:hover {
+  cursor: pointer;
+  background-color: #59a154;
+  font-size: 15px;
+
+}
